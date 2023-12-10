@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    color: white;
+    background-color: #0F0F0F;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgb(223, 195, 195); */
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  /* background-color: #383636; */
+  height: 60px;
+}
+#yicon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+#yicon img{
+  padding-left: 15px;
+  width: 120px;
+  color: white;
+}
+.ri-menu-line{
+  font-size: 1.3rem;
+  color: white;
+}
+#search-bar input{
+  width: 600px;
+  height: 35px;
+  border-radius: 50px;
+  padding:0 10px;
+  font-size: 15px;
+}
+.ri-mic-fill{
+  margin-left: 20px;
+  font-weight: 300;
+  /* padding: 12px 10px; */
+  border-radius: 50%;
+  /* background-color: #656565; */
+}
+#notif{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.video,.notifi,.prof-logo{
+  font-size: 25px;
+}
+.prof-logo a{
+  text-decoration: none;
+}
+.prof-menu{
+  position: fixed;
+  top: 15px;
+  right: 50px;
+  background-color: #292829;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  width: 25%;
+  z-index: 1001;
+  height: calc(100vh - 20px);
+  border-radius: 22px;
+  transform: translateX(115%);
+  transition: all ease .25s;
+}
+.open{
+  transform: translateX(10px);
+}
+.prof-menu ul a{
+  border-radius: 22px;
+  background-color: #292829;
+}
+.prof-menu ul{
+  border-radius: 22px;
+  background-color: #292829;
+  list-style: none;
+  padding: 25px 15px;
+}
+.prof-menu li{
+  background-color: #292829;
+  cursor: pointer;
+  padding: 25px 20px;
+}
+#profile-icon:hover + #profile-menu,
+#profile-icon:focus + #profile-menu,
+#profile-menu:hover {
+    display: block;
+}
+
+nav .categ{
+  padding-left: 5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  white-space: nowrap;
+  overflow: auto;
+}
+nav .categ::-webkit-scrollbar{
+  display: none;
+}
+nav .categ a{
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  background-color: #262627;
+  color: white;
+}
+#lnav{
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 1200;
+  height: calc(100vh - 60px);
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 25px;
+}
+#lnav i{
+  padding-top: 20px;
+}
+.bottom{
+  display: flex;
+  width: 100%;
+  /* background-color: #713838; */
+}
+.main-content{
+  margin-top: 110px;
+  margin-left: 5%;
+  width: calc(100% - 5%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.box{
+  width: 29vw;
+  height: 25vw;
+  overflow: hidden;
+  position: relative;
+}
+.box .img-sect{
+  width: 100%;
+  height: 65%;
+}
+.img-sect img{
+  border-radius: 1.5vw;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+.box .write-sect{
+  margin-top: 15px;
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  background-color: #fff;
+  display: flex;
+}
+.write-sect .prof{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  /* background-color: red; */
+  justify-content: space-between;
+}
+#apan{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(210, 188, 188);
+  /* margin-left: -20px; */
+}
+.prof-cont{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 100%;
+  width: calc(100% - 15%);
+  /* background-color: #fff; */
+}
+.titlename{
+  width: 100%;
+  height: 45%;
+  overflow: hidden;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.52rem;
+  text-overflow: ellipsis; 
+  letter-spacing: .5px;
+}
+.name{
+  padding: 2px 4px;
+}
+.views-count{
+  padding: 2px 4px;
+}
+
+#apan{
+    width: 45px ;
+    height: 45px ;
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+#apan img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
